@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/busquedaMedicamentos.css">
+    <script type="text/javascript" src="../JS/busquedaMedicamentos.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick=window.history.back()>
+                    <img src="../Imagenes/regreso.png" id="img_regreso">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Busqueda Medicamento"-->
+        <div class="column is-full" id="div_BusquedaMedicamento">
+            <p id="txtBusquedaMedicamento"style="font-size: 70px">BUSQUEDA MEDICAMENTO</p>
+        </div>
+    </div>
+    <div class="columns is-mobile" ><!--AQUI VA TODA LA PARTE DEL FORMULARIO-->
+        <div class="column is-half is-offset-one-quarter" id="div_formulario">
+            <br><br>
+            <h1> Nombre de Medicamento </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese nombre del medicamento" id="input_NombreMedicamento">
+            </div>
+            <br><br>
+            <div id="div_buttom">
+                <button type="button" class="button is-link" id="bottomBuscar" onclick="busquedaMedicamento()">BUSCAR</button>
+            </div>
+            <br>
+        </div>
+    </div> 
+    <br><br><br><br><br><br><br><br><br><br>  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="Es-MX">
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/MoverPaciente.css">
+    <script type="text/javascript" src="../JS/MoverPaciente.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick=window.history.back()>
+                    <img src="../Imagenes/regreso.png" id="img_regreso">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "EDITAR PACIENTE"-->
+        <div class="column is-full" id="div_EditPaciente">
+            <p id="txtEditarPaciente"style="font-size: 70px">EDITAR PACIENTE</p>
+        </div>
+    </div>
+    <div class="columns is-mobile" ><!--AQUI VA TODA LA PARTE DEL FORMULARIO-->
+        <div class="column is-half is-offset-one-quarter" id="div_formulario">
+            <h1> ID PACIENTE </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese ID" id="input_ID">
+            </div>
+            <br><br>
+            <div class="columns">
+                <div class="column is-half">
+                    <h1>Numero Cama</h1>
+                    <div id="div_NumCama">
+                        <input id="cama">
+                    </div>
+                </div>
+                <div class="column">
+                    <h1>Pabellon</h1>
+                    <div id="div_NumPabellon">
+                        <input id="pabellon">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="div_buttom">
+                <button type="button" class="button is-link" id="bottomRegistrar" onclick="moverPaciente()">EDITAR</button>
+            </div>
+            <br>
+        </div>
+    </div> 
+    <br><br><br>
+</body>
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    text-align: center;
+    background-image: url("../Imagenes/FondoInicioSesion.jpg.jpeg");
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y:10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+}
+/*HOME*/ 
+#home{
+    align-items: right;
+}
+#bottomHome{
+    position: relative;
+    right: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: larger;
+    background-color: red;
+}
+#img_regreso{
+    height: 90%;
+}
+/*FORMULARIO*/
+#div_formulario{
+    background-color: rgb(187, 255, 181);
+    height: 750px;
+    width:700px;
+    border-radius: 9px;
+    box-shadow: 7px 13px 40px black;
+    margin-top: 4%;
+}
+
+h1 {
+    color: rgb(57, 56, 56);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+}
+p {
+    color: rgb(57, 56, 56);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+#Nombre, #Apellidos, #Telefono, #pabellon, #Especialidad, #areaEncargada, #Bodega, #Rango, #area{
+    position: relative;
+    width: 300px;
+    border-radius: 3px;
+}
+#TipoSanguineo, #Cargo {
+    position: relative;
+    width: 200px;
+    border-radius: 3px;
+}
+#agregar-btn, #volver-btn {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    background-color: rgb(74, 8, 196);
+    border-radius: 3px;
+    border: none;
+}
+#agregar-btn {
+    right: 5%;
+    position: relative;
+}
+#volver-btn {
+    left: 5%;
+}

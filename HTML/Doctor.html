@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/Doctor.css">
+    <script type="text/javascript" src="../JS/listarPacienteDoctor.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="location.href='InicioDeSesion.html'">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body onload="verPacientes('m')">
+    <div class="columns" > <!--AQUI VA LO DE LOS DATOS DE PERFIL  -->
+        <div class="box">
+            <div class="is full" id="div_perfil">
+                <div class="columns is half">
+                    <div class="column is half">
+                        <div> 
+                            <p id="txtNombre">Nombre  : aaaaaaaaaaaaaaaa</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtApellido">Apellido : bbbbbbbbbbbbbbbb</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtArea">Area : aaaaaa</p>
+                        </div>
+                        <br>   
+                        <div>
+                            <p id="txtNumero">Numero de ID : 0000 </p>
+                        </div>
+                    </div>
+                    <div class="column is half">
+                        <div> 
+                            <p id="txtNombre">Especialidad : aaaaaaaaaaaaaaaa</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtApellido">Tipo de Sangre : bbj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  <!--AQUI TERMINA  -->
+        <div class="column">  <!--IMAGEN DE LOGO DEL HOSPITAL -->
+            <div class="center" id="div_img">
+                <img src="Imagenes/logoHospital.jpg" id="logoHospital">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="columns"> <!--AQUI ESTA EL TEXTO DE DIAGNOSTICO  -->
+        <div class="column is-full" id="div_UR">
+            <h1 class="title is-1" id="title_UR"> DIAGNOSTICOS</h1>
+        </div>
+    </div> <!--AQUI TERMINA  -->
+    <br>
+    <p>Ingrese el nombre del paciente</p>
+    <input id="nombrePaciente">
+    <button onclick="verPacientes('e')">Dar de alta</button>
+    <br>
+</html>

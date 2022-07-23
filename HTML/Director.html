@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/Director.css">
+    <script type="text/javascript" src="MostrarDirectivo.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="location.href='InicioDeSesion.html'">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body onload="mostrar()">
+    <div class="columns" > <!--AQUI VA LO DE LOS DATOS DE PERFIL  -->
+        <div class="box">
+            <div class="is full" id="div_perfil">
+                <div class="columns is half">
+                    <div class="column is half">
+                        <div> 
+                            <p id="txtNombre">Nombre  : aaaaaaaaaaaaaaaa</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtApellido">Apellido : bbbbbbbbbbbbbbbb</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtArea">Area : aaaaaa</p>
+                        </div>
+                        <br>   
+                        <div>
+                            <p id="txtNumero">Numero de Telefono : 0000 </p>
+                        </div>
+                    </div>
+                    <div class="column is half">
+                        <div class="is-center">
+                            <p id="txtRango">Rango  : aaaaaa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  <!--AQUI TERMINA  -->
+        <div class="column">  <!--IMAGEN DE LOGO DEL HOSPITAL -->
+            <div class="center" id="div_img">
+                <img src="../Imagenes/Logo.PNG" id="logoHospital">
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="columns">
+        <div class="column is-one-third">
+            <div id="div_bottomBuscar">
+                <button class="button" id="bottomBuscar" onclick="location.href='editarUsuario.html'">EDITAR</button>
+            </div>
+        </div>
+        <div class="column">
+            <div id="div_bottomAgregar">
+                <button class="button" id="bottomAgregar" onclick="location.href='registro.html'">AGREGAR</button>
+            </div>
+        </div>
+        <div class="column">
+            <div id="div_bottomEliminar">
+                <button class="button" id="bottomEliminar" onclick="location.href='eliminarUsuario.html'">ELIMINAR</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="columns"> <!--EL COMPLEMENTO DE LAS BUSQUEDAS, REGISTROS, CONSULTAS  -->
+        <div class="column is-half" id="div_doctores">
+            <div id="div_doctor">
+                <h1 class="title is-1" id="txt"> DOCTORES </h1>
+                <a class="is-link" href="editarDoctor.html">Actualizar Doctor</a>
+                <br><br>
+                <a class="is-link" href="MostraListaDoctores.HTML">Listar Doctores</a>
+            </div>
+        </div>
+        <div class="column is-half" id="div_pacientes">
+            <div id="div_paciente">
+                <h1 class="title is-1" id="txt"> PACIENTE </h1>
+                <a class="is-link" href="RegistroPaciente.html">Realizar nuevo registro</a>
+                <br><br>
+                <a class="is-link" href="eliminarPaciente.html">Eliminar registro</a>
+                <br><br>
+                <a class="is-link" href="busquedaPaciente.html">Realizar Busqueda</a>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-half" id="div_secretario">
+            <div id="div_secret">
+                <h1 class="title is-1" id="txt"> SECRETARIO/A </h1>
+                <br>
+                <a class="is-link" href="editarSecretario.html">Actualizar Secretario/a</a>
+            </div>
+        </div>
+        <div class="column is-half" id="div_medicamentos">
+            <div id="div_medi">
+                <h1 class="title is-1" id="txt"> MEDICAMENTOS </h1>
+                <a class="is-link" href="busquedaMedicamentos.html">Realizar busqueda</a>
+                <br><br>
+                <a class="is-link" href="registroMedicamentos.html">Realizar registro</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <!---<div class="columns">
+        <div class="column is-half" id="div_encargadoBodega">
+            <div id="div_EB">
+                <h1 class="title is-1" id="txt"> ENCARGADO DE BODEGA </h1>
+                <br>
+                <a class="is-link" href="editarUsuario.html">Actualizar Encargado de Bodega</a>
+            </div>
+        </div>
+        <div class="column is-half" id="div_directivo">
+            <div id="div_direc">
+                <h1 class="title is-1" id="txt"> DIRECTIVO </h1><br>
+                <a class="is-link" href="editarUsuario.html">Actualizar  Directivo</a>
+            </div>
+        </div>
+    </div>/--->
+    <br><br>
+</body>
+</html>

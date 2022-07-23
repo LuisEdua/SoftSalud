@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>RegistroUsuario</title>
+        <link rel="stylesheet" href="../bulma/css/bulma.css">
+        <link rel="stylesheet" href="../CSS/registro.css">
+        <script type="text/javascript" src="../JS/registroOculto.js"></script>
+        <script type="text/javascript" src="../JS/RegistroUsuario.js"></script>
+    </head>
+    <header>
+        <div class="columns" id="div_home">
+            <div class="column is-1" id="home">
+                <div class="is-left">
+                    <button type="button" class="button is-link" id="bottomHome" onclick=window.history.back()>
+                        <img src="../Imagenes/regreso.png" id="img_regreso">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="columns is-mobile" ><!--AQUI VA TODA LA PARTE DEL FORMULARIO-->
+            <div class="column is-half is-offset-one-quarter" id="div_formulario">
+                <h1>Nuevo Registro</h1>
+                <p>Nombre</p>
+                <input type="text" id="Nombre">
+                <p>Apellidos</p>
+                <input type="text" id="Apellidos">
+                <p>Numero telefonico</p>
+                <input type="tel" id="Telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <p>Tipo de Sangre</p>
+                <select id="TipoSanguineo">
+                    <option disabled selected>Seleccionar</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="AB+">AB+</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O-">O-</option>
+                </select>
+                <p>Cargo Asignado</p>
+                <select id="Cargo" onchange="mostrar(this)">
+                    <option disabled selected>Seleccionar</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Secretaria">Secretaria</option>
+                    <option value="Encargado de Bodega">Encargado de Bodega</option>
+                    <option value="Directivo">Directivo</option>
+                </select>                
+                <div id="Doctor" style="display: none">
+                    <p>Area Encargada</p>
+                    <input type="text" id="pabellon"><br>
+                    <p>Especialidad</p>
+                    <input type="text" id="Especialidad">
+                </div>
+                <div id="Secretaria" style="display:none">
+                    <p>Area Encargada</p>
+                    <input type="text" id="areaEncargada">
+                </div>
+                <div id="Encargado" style="display: none">
+                    <p>Bodega Asignada</p>
+                    <input type="text" id="Bodega">
+                </div>
+                <div id="Directivo" style="display: none">
+                    <p>Rango</p>
+                    <input type="text" id="Rango">
+                    <p>Area Encargada</p>
+                    <input type="text" id="area">
+                </div>
+                <div id="botones">
+                    <button id="agregar-btn" onclick="cargarDatos()">AGREGAR</button>
+                    <button id="volver-btn" onclick=window.history.back()>VOLVER</button>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </body>
+</html>

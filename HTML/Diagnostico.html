@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/Diagnostico.css">
+    <script type="text/javascript" src="../JS/modificarPaciente.js"></script>
+</head>
+<header>
+    <br><br><br>
+</header>
+<body onload="mostrarPaciente()">
+    <div class="box">
+        <div class="columns">
+            <div class="column is-half">
+                <figure class="image is-square">
+                    <img src="../Imagenes/Logo.PNG">
+                </figure>
+            </div>
+            <div class="column is-half">
+                <p class="is-size-5" id="nombre">Nombre:</p>
+                <br><br>
+                <p class="is-size-5" id="apellido">Apellido :</p>
+                <br><br>
+                <p class="is-size-5" id="direccion">Direccion :</p>
+                <br><br>
+                <p class="is-size-5" id="sangre">Tipo de Sangre :</p>
+                <br>
+                <p class="is-size-5" id="pabellon">Num. Pabellon :</p>
+                <br>
+                <p class="is-size-5" id="cama">Num. Cama :</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half">
+                <p class="is-size-5">Diagnostico</p>
+                <input class="input" type="text" id="input_diagnostico">
+                <button class="button is-primary" id="bottom_registrar" onclick="agregarDiagnostico()">Registrar</button>
+            </div>
+            <div class="column is-half">
+                <p class="is-size-5">Medicacion</p>
+                <input class="input" type="text" id="input_medicacion">
+                <button class="button is-primary" id="bottom_registrar" onclick="agregarMedicacion()">Registrar</button>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-full">
+                <button class="button is-danger" id="bottom_ver" onclick=window.history.back()>Regresar</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+</body>
+</html>

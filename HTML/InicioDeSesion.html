@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/InicioDeSesion.css" >
+    <script type="text/javascript" src="../JS/validarUsuario.js"></script>
+</head>
+<body>
+    <div class="columns is-mobile" id="div_colum"> <!--ESTE ES EL DONDE ESTA ESCRITO "Inicio de Sesion"-->
+        <div class="column is-full" id="div_InicioDeSesion">
+            <p id="txtInicioDeSesion"style="font-size: 70px">INICIO DE SESIÓN</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile" ><!--AQUI VA TODA LA PARTE DEL FORMULARIO-->
+        <div class="column is-half is-offset-one-quarter" id="div_formulario">
+            <h1> ID USUARIO </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese ID Usuario" id="input_ID">
+            </div>
+            <br>
+            <h1> CONTRASEÑA </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="password" placeholder="Ingrese la Contraseña" id="input_Password">
+            </div>
+            <br>
+            <div id="div_buttom">
+                <button onclick="validar()" type="button" class="button is-link" id="buttomEntrar">ENTRAR</button>
+            </div>
+            <br>
+            <div id="div_buttom">
+                <button type="button" class="button is-link" id="buttomInvitado" onclick='location.href="busquedaPaciente.html"'>Continuar como invitado</button>
+            </div>
+        </div>
+    </div> 
+    <a link href="Director.HTML">Perfil Director</a><br>
+    <a link href="Doctor.HTML">Perfil Doctor</a><br>
+    <a link href="Secretaria.HTML">Perfil Secretaria</a><br>
+    <a link href="EncargadoBodega.html">ENCARGADO BODEGA</a>
+</body>
+</html>

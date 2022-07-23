@@ -1,0 +1,10 @@
+table, th, td, tr{
+    border: 1px solid black;
+}
+th{
+    width: 250px;
+}
+#titulo{
+    font-size: 40px;
+    font-weight: bold;
+}

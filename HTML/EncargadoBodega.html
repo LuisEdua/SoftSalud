@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/EncargadoBodega.css">
+    <script type="text/javascript" src="MostrarDirectivo.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="window.history.back()">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns" > <!--AQUI VA LO DE LOS DATOS DE PERFIL  -->
+        <div class="box">
+            <div class="is full" id="div_perfil">
+                <div class="columns is half">
+                    <div class="column is half">
+                        <div> 
+                            <p id="txtNombre">Nombre  : aaaaaaaaaaaaaaaa</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtApellido">Apellido : bbbbbbbbbbbbbbbb</p>
+                        </div>
+                        <br>
+                        <div>
+                            <p id="txtArea">Bodega : aaaaaa</p>
+                        </div>
+                        <br>   
+                        <div>
+                            <p id="txtNumero">Numero de Telefono : 0000 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  <!--AQUI TERMINA  -->
+        <div class="column">  <!--IMAGEN DE LOGO DEL HOSPITAL -->
+            <div class="center" id="div_img">
+                <img src="../Imagenes/ebodega.png" id="logoHospital">
+            </div>
+        </div>
+    </div>  <!--    AQUI TERMINA  -->
+    <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+            <div>
+                <h1 class="title is-1" id="textoOpciones"> OPCIONES </h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="columns">
+        <div class="column is-one-third">
+            <div id="div_bottomBuscar">
+                <button class="button" id="bottomBuscar" onclick="location.href='busquedaMedicamentos.html'">BUSCAR</button>
+            </div>
+        </div>
+        <div class="column">
+            <div id="div_bottomAgregar">
+                <button class="button" id="bottomAgregar" onclick="location.href='registroMedicamentos.html'">AGREGAR</button>
+            </div>
+        </div>
+        <div class="column">
+            <div id="div_bottomEliminar">
+                <button class="button" id="bottomEliminar" onclick="location.href='eliminarMedicamento.html'">ELIMINAR</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+</body>

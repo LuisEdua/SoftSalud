@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../bulma/css/bulma.css">
+    <link rel="stylesheet" href="../CSS/registroPaciente.css">
+    <script type="text/javascript" src="../JS/RegistroPaciente.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick=window.history.back()>
+                    <img src="../Imagenes/regreso.png" id="img_regreso">
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Registro de pacientes"-->
+        <div class="column is-full" id="div_RegistroPacientes">
+            <p id="txtRegistroPaciente"style="font-size: 70px">REGISTRO DE PACIENTES</p>
+        </div>
+    </div>
+    <div class="columns is-mobile" ><!--AQUI VA TODA LA PARTE DEL FORMULARIO-->
+        <div class="column is-half is-offset-one-quarter" id="div_formulario">
+            <h1> Nombre  </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese nombre" id="input_Nombre">
+            </div>
+            <br>
+            <h1> Apellidos </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese apellidos" id="input_Apellidos">
+            </div>
+            <br>
+            <h1 id="TS"> Tipo de Sangre </h1>
+            <br>
+            <div id="div_TipoSanguineo">
+                <div class="select">
+                    <select>
+                        <option disabled selected id="tipoSangre">Seleccionar</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="AB+">AB+</option>
+                        <option value="O+">O+</option>
+                        <option value="A-">A-</option>
+                        <option value="B-">B-</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+            </div>
+            <h1> Direccion </h1>
+            <br>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="Ingrese la direccion" id="input_Direccion">
+            </div>
+            <br><br>
+            <div class="columns">
+                <div class="column is-half">
+                    <h1>Alergias</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_Alergia">
+                    </div>
+                </div>
+                <div class="column">
+                    <h1>Trabajo</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_Trabajo">
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-half">
+                    <h1>Deporte</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_Deporte">
+                    </div>
+                </div>
+                <div class="column">
+                    <h1>Num. Telefonico</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_NumTelefonico">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <h1>Antecedentes Familiares</h1>
+            <div id="div_id">
+                <input class="input" type="text" placeholder="..." id="input_Antecedentes">
+            </div>
+            <br>
+            <div class="columns">
+                <div class="column is-half">
+                    <h1>Num. Cama</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_NumCama">
+                    </div>
+                </div>
+                <div class="column">
+                    <h1>Pabellon</h1>
+                    <div id="div_id">
+                        <input class="input" type="text" placeholder="..." id="input_NPabellon">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div id="div_buttom">
+                <button type="button" class="button is-link" id="bottomRegistrar" onclick="cargarDatos()">REGISTRAR</button>
+            </div>
+            <br>
+        </div>
+    </div> 
+    <br><br><br><br>
+</body>
+</html>

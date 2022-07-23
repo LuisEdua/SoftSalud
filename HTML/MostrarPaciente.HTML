@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <link rel="stylesheet" href="MostrarPaciente.CSS">
+    <script type="text/javascript" src="../JS/mostrarPaciente.js"></script>
+</head>
+<header>
+</header>
+<body onload="mostrarPaciente()">
+    <div class="box">
+        <div class="columns">
+            <div class="column is-half">
+                <figure class="image is-square">
+                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                </figure>
+            </div>
+            <div class="column is-half">
+                <p class="is-size-5" id="nombre">Nombre:</p>
+                <br><br>
+                <p class="is-size-5" id="apellido">Apellido :</p>
+                <br><br>
+                <p class="is-size-5" id="direccion">Direccion :</p>
+                <br><br>
+                <p class="is-size-5" id="sangre">Tipo de Sangre :</p>
+                <br>
+                <p class="is-size-5" id="pabellon">Num. Pabellon :</p>
+                <br>
+                <p class="is-size-5" id="cama">Num. Cama :</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-half">
+                <p class="is-size-5" id="diagnostico">Diagnostico : aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+            <div class="column is-half">
+                <p class="is-size-5" id="medicacion">Medicacion : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-full">
+                <button class="button" id="bottom_ver" onclick='window.history.back()'>Regresar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
