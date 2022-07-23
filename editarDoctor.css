@@ -1,0 +1,31 @@
+/*HOME*/ 
+#home{
+    align-items: right;
+}
+#bottomHome{
+    position: relative;
+    right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 750;
+    font-size: larger;
+}
+/* TEXTO DE EditarDatos*/ 
+#div_EditarDatos{
+    text-align: center;
+}
+#txtEditarDatos{
+    font-weight: 900;
+}
+/* TEXTO ABAJO*/ 
+#div_IDusuario{
+    text-align: left;
+}
+/*BOTTOM Editar*/ 
+div.center{
+    text-align: center;
+}
+#bottomEditar{
+    padding: 25px 32px;
+    font-weight: 750;
+    font-size:xx-large;
+}

@@ -1,0 +1,31 @@
+/* TEXTO DE inicio de sesion*/ 
+#div_InicioDeSesion{
+    text-align: center;
+}
+#txtInicioDeSesion{
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* TEXTO DE usuario*/ 
+#div_Uuario{
+    text-align: left;
+}
+/* TEXTO DE contraseña*/ 
+#div_Password{
+    text-align: left;
+}
+/*BOTTOM entrar*/ 
+div.center{
+    text-align: center;
+}
+#bottomEntrar{
+    padding: 30px 32px;
+    background-color:darkgrey;
+    font-weight: 600;
+}
+/*BOTTOM modo invitado*/ 
+#bottomInvitado{
+    padding: 25px 40px;
+    background-color: rgb(0, 153, 255);
+    font-weight: bolder;
+}

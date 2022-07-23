@@ -1,0 +1,29 @@
+/*HOME*/ 
+#home{
+    align-items: center;
+}
+#bottomHome{
+    align-items: center;
+}
+/* TEXTO DE BUSQUEDA MEDICAMENTO*/ 
+#div_BusquedaMedicamento{
+    text-align: center;
+}
+#txtBusquedaMedicamento{
+    font-weight: 900;
+}
+/* TEXTO DE NOMBRE DE MEDICAMENTO*/ 
+#div_NombreDeMedicamento{
+    text-align: left;
+}
+/* TEXTO DE TIPO DE MEDICAMENTO*/ 
+#div_TipoDeMedicamento{
+    text-align: left;
+}
+/*BOTTOM BUSCAR*/ 
+div.center{
+    text-align: center;
+}
+#bottomBuscar{
+    padding: 30px 32px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="/bulma/css/bulma.css">
+    <link rel="stylesheet" href="/editarUsuario.css">
+    <script src="editarUsuario.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="home()">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Editar Datos"-->
+        <div class="column is-full" id="div_EditarDatos">
+            <p id="txtEditarDatos"style="font-size: 70px">EDITAR DATOS</p>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "ID del Usuario"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_IDusuario">
+            <p id="txtIDusuario" style="font-size: 35px">ID de Usuario</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE SE INGRESA EL ID  usuario-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_IDusuario">
+            <div class="control">
+                <input class="input" type="text" placeholder="Ingrese ID del Usuario" id="input_IDusuario">
+            </div>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES DONDE VA INGRESADO EL BOTON "Editar"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_bottomEditar">
+            <div class="center"> <!--CON ESTO ALINE EL BOTTOM EditarDENTRO DE OTRO DIV CON CLASE CENTER-->
+                <button type="button" class="button is-link" id="bottomEditar" data-value="[0,0,0]" onclick="goToLink(this)"> EDITAR </button>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

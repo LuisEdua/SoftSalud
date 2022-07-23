@@ -1,0 +1,29 @@
+/*HOME*/ 
+#home{
+    background-color: rgb(149, 213, 255);
+    border: 5px outset rgb(195, 238, 252);
+    border-radius: 5px;
+}
+#txtHome{
+    text-align: justify;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* TEXTO DE BUSQUEDA PACIENTE */ 
+#div_BusquedaPaciente{
+    text-align: center;
+}
+#txtBusquedaPaciente{
+    font-weight: 900;
+}
+/* TEXTO DE ID PACIENTE*/ 
+#div_IDPaciente{
+    text-align: center;
+}
+/*BOTTOM BUSCAR*/ 
+div.center{
+    text-align: center;
+}
+

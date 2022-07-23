@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <link rel="stylesheet" href="eliminarDoctor.css">
+    <script type="text/javascript" src="eliminarDoctor.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="location.href='InicioDeSesion.html'">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Eliminar Doctor"-->
+        <div class="column is-full" id="div_EliminarDoctor">
+            <p id="txtEliminarDoctor" style="font-size: 70px">ELIMINAR DOCTOR</p>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "ID"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_ID">
+            <p id="txtID" style="font-size: 35px">ID del Doctor</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE SE INGRESA EL ID-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_ID">
+            <div class="control">
+                <input class="input" type="text" placeholder="Ingrese ID" id="input_ID">
+            </div>
+        </div>
+    </div>  
+    <div class="columns is-mobile"> <!--ESTE ES DONDE VA INGRESADO EL BOTON "ELIMINAR"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_bottomEliminar">
+            <div class="center"> <!--CON ESTO ALINE EL BOTTOM ELIMINAR DENTRO DE OTRO DIV CON CLASE CENTER-->
+                <button type="button" class="button is-link" id="bottomEliminar" onclick="eliminarDoctor()">ELIMINAR</button>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

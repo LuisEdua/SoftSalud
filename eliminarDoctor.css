@@ -1,0 +1,26 @@
+/*HOME*/ 
+#home{
+    align-items: center;
+}
+#bottomHome{
+    align-items: center;
+}
+/* TEXTO DE ELIMINAR DOCTOR*/ 
+#div_EliminarDoctor{
+    text-align: center;
+}
+#txtEliminarDoctor{
+    font-weight: 900;
+}
+/* TEXTO DE NOMBRE*/ 
+#div_ID{
+    text-align: left;
+}
+
+/*BOTTOM ELIMINAR*/ 
+div.center{
+    text-align: center;
+}
+#bottomEliminar{
+    padding: 30px 32px;
+}

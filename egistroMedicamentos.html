@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="bulma/css/bulma.css">
+    <link rel="stylesheet" href="registroMedicamentos.css">
+    <script type="text/javascript" src="registroMedicamentos.js"></script>
+</head>
+<header>
+    <div class="columns" id="div_home">
+        <div class="column is-1" id="home">
+            <div class="is-left">
+                <button type="button" class="button is-link" id="bottomHome" onclick="location.href='InicioDeSesion.html'">Home</button>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Registro de Medicamento"-->
+        <div class="column is-full" id="div_RegistroMedicamento">
+            <p id="txtRegistroMedicamento" style="font-size: 70px">REGISTRO DE MEDICAMENTO</p>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Id del medicamento"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_ID">
+            <p id="txtID" style="font-size: 35px">ID del Medicamento</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE SE INGRESA EL ID-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_ID">
+            <div class="control">
+                <input class="input" type="text" placeholder="M432...." id="input_ID">
+            </div>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Nombre"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_Nombre">
+            <p id="txtNombre" style="font-size: 35px">Nombre de medicamento</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE SE INGRESA EL NOMBRE-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_Nombre">
+            <div class="control">
+                <input class="input" type="text" placeholder="Ingrese Nombre de Medicamento" id="input_Nombre">
+            </div>
+        </div>
+    </div>
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Tipo de Medicamento"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_TipoMedicamento">
+            <p id="txtMedicamento" style="font-size: 35px">Tipo de Medicamento</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE SE INGRESA EL APELLIDO-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_TMedicamento">
+            <div class="control">
+                <div class="select">
+                <select id="select_Medicamento">
+                    <option>Analgésicos</option>
+                    <option>Antiácidos</option>
+                    <option>Antialérgicos</option>
+                    <option>Antidiarreicos</option>
+                    <option>Antiinfecciosos</option>
+                    <option>Antiinflamatorios</option>
+                    <option>Antipiréticos</option>
+                    <option>Antitusivos</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE ESTA ESCRITO "Bodega"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_NumeroBodega">
+            <p id="txtNumeroBodega" style="font-size: 35px">Num. de bodega</p>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES EL DONDE SE VA SELECCIONAR EL NUMERO DE BODEGA-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_NumBodega">
+            <div class="control">
+                <div class="select">
+                <select id="select_NumBodega">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="columns is-mobile"> <!--ESTE ES DONDE VA INGRESADO EL BOTON "Registrar"-->
+        <div class="column is-three-fifths is-offset-one-fifth" id="div_bottomRegistrar">
+            <div class="center"> <!--CON ESTO ALINE EL BOTTOM REGISTAR DENTRO DE OTRO DIV CON CLASE CENTER-->
+                <button type="button" class="button is-link" id="bottomRegistrar" onclick="agregarMedicamentos()">REGISTRAR</button>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
