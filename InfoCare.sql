@@ -1,4 +1,4 @@
-drop database InfoCare;
+#drop database InfoCare;
 CREATE DATABASE InfoCare;
 USE InfoCare;
 
@@ -55,7 +55,7 @@ CREATE TABLE secretario (
 	CONSTRAINT fk_id_secretario FOREIGN KEY (id_secretario)
     REFERENCES usuarios(id_usuario) ON DELETE CASCADE
 );
-DROP TABLE secretario;
+#DROP TABLE secretario;
 
 CREATE TABLE encargado_bodega (
 	id_encargado VARCHAR(20) NOT NULL,
@@ -64,7 +64,7 @@ CREATE TABLE encargado_bodega (
 	CONSTRAINT fk_id_encargado FOREIGN KEY (id_encargado)
     REFERENCES usuarios(id_usuario) ON DELETE CASCADE
 );
-DROP TABLE encargado_bodega;
+#DROP TABLE encargado_bodega;
 
 CREATE TABLE directivo (
 	id_directivo VARCHAR(20) NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE directivo (
 	CONSTRAINT fk_id_directivo FOREIGN KEY (id_directivo)
     REFERENCES usuarios(id_usuario) ON DELETE CASCADE
 );
-DROP TABLE directivo;
+#DROP TABLE directivo;
 
 INSERT INTO `infocare`.`usuarios` (`id_usuario`, `password_usuario`, `nombre_usuario`, `apellido_usuario`, `numero_telefonico`, `tipo_sangre`, `cargo_usuario`) VALUES ('D123HQY1', 'quesillo', 'Alessandro Guadalupe', 'Garcia Espinosa', '98765432', 'O+', 'Directivo');
 INSERT INTO `infocare`.`usuarios` (`id_usuario`, `password_usuario`, `nombre_usuario`, `apellido_usuario`, `numero_telefonico`, `tipo_sangre`, `cargo_usuario`) VALUES ('D123GF12', 'mantecada', 'Omar Alexis', 'Cueto Aguilar', '90827819', 'A+', 'Directivo');
@@ -97,8 +97,16 @@ INSERT INTO `infocare`.`usuarios` (`id_usuario`, `password_usuario`, `nombre_usu
 INSERT INTO `infocare`.`usuarios` (`id_usuario`, `password_usuario`, `nombre_usuario`, `apellido_usuario`, `numero_telefonico`, `tipo_sangre`, `cargo_usuario`) VALUES ('B231C32S', 'onedi', 'Stefany Belen', 'Meza Sanchez', '97202833', 'B+', 'Encargado Bodega');
 INSERT INTO `infocare`.`usuarios` (`id_usuario`, `password_usuario`, `nombre_usuario`, `apellido_usuario`, `numero_telefonico`, `tipo_sangre`, `cargo_usuario`) VALUES ('B231RTO9', 'ropalimpia', 'Harry', 'Edward Styles', '38283930', 'AB+', 'Encargado Bodega');
 
-INSERT INTO doctores(id_doctor, area_encargada, especialidad) VALUES ('D213TQR1', "Urgencias", "Medicina General"), ('D213POQ1', "Neurologia", "Neurologo"), 
-('D213YYQ0', "Cardiologia", "Cardiologo"), ('D213AQ43', "Urgencias", "Neurologia"), ('D213PQ00', "Cardiologia", "Internista");
+INSERT INTO directivo VALUES ('D123HQY1', 'Director de Area', 'Neurología'), 
+('D123GF12', 'Director de Area', 'Pediatria'), ('D123FF21', 'Director de Area', 'Urgencias'),
+('D123HYR9', 'Director General', 'Direccion General'), ('D123NM34', 'Director de Area', 'Cardiologia');
+INSERT INTO secretario VALUES ('A321HAQ4', "Urgencias"), ('A321PP12', 'Neurología'), 
+('A321VBV1', 'Pediatria'), ('A321QW11', 'Cardiologia'), ('A321WQX9', 'Proctologia');
+INSERT INTO doctores VALUES ('D213TQR1', "Urgencias", "Medicina General"), 
+('D213POQ1', "Neurologia", "Neurologo"), ('D213YYQ0', "Cardiologia", "Cardiologo"), 
+('D213AQ43', "Urgencias", "Neurologia"), ('D213PQ00', "Cardiologia", "Internista");
+INSERT INTO encargado_bodega VALUES('B231QPZ1', '1'), ('B231XZA1', '2'), ('B231LOQ0', '3'),
+('B231C32S', '4'), ('B231RTO9', '1');
 
 INSERT INTO `infocare`.`pacientes` (`id_paciente`, `nombre_paciente`, `apellido_paciente`, `tipo_sangre`, `direccion`, `diagnostico`, `alergia`, `trabajo`, `deporte`, `antecedente_familiar`, `intervencion`, `numero_telefonico`, `medicacion`, `pabellon`, `numero_cama`) VALUES ('P532UYQ0', 'Niall', 'James Horan', 'O+', 'CLL CLL 18 A PONIENTE SUR 184, XAMAIPAK , TUXTLA GUTIERREZ , CHIS ', 'Dolor leve de Cabeza', 'Polvo', 'Ninguno', 'Futbol', 'Ninguno', 'Ninguna', '987362738', 'Tomar Ibuprofeno 600mg cada 12 horas durante 5 dias', 'Ninguno', '01');
 INSERT INTO `infocare`.`pacientes` (`id_paciente`, `nombre_paciente`, `apellido_paciente`, `tipo_sangre`, `direccion`, `diagnostico`, `alergia`, `trabajo`, `deporte`, `antecedente_familiar`, `intervencion`, `numero_telefonico`, `medicacion`, `pabellon`, `numero_cama`) VALUES ('P532PPQ7', 'Keyko', 'Escobar Villaverde', 'A+', 'CLL PALACIO MPAL S/N, CENTRO , COMITAN , CHIS ', 'Dolor Estomaca', 'Ninguno', 'Ingeniero de Software', 'Basketball', 'Diabetes', 'Ninguna', '55432467', 'Ingerir una cucharada de Pepto-Bismol cada 12 horas por 3 dias', 'Ninguno', '89');
@@ -108,5 +116,3 @@ INSERT INTO `infocare`.`pacientes` (`id_paciente`, `nombre_paciente`, `apellido_
 
 INSERT INTO `infocare`.`medicamentos` (`id_medicamento`, `nombre_medicamento`, `tipo_medicamento`, `numero_bodega`) VALUES ('M432AHQY', 'Ibuprofeno', 'Pastilla', '1');
 INSERT INTO `infocare`.`medicamentos` (`id_medicamento`, `nombre_medicamento`, `tipo_medicamento`, `numero_bodega`) VALUES ('M432QAR1', 'Paracetamol', 'Pastilla', '2');
-INSERT INTO `infocare`.`medicamentos` (`id_medicamento`) VALUES ('');
-
