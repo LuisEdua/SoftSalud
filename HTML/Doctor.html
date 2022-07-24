@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="../bulma/css/bulma.css">
     <link rel="stylesheet" href="../CSS/Doctor.css">
     <script type="text/javascript" src="../JS/listarPacienteDoctor.js"></script>
+    <script type="text/javascript" src="../JS/MostrarDatos.js"></script>
 </head>
 <header>
     <div class="columns" id="div_home">
@@ -13,7 +14,7 @@
         </div>
     </div>
 </header>
-<body onload="verPacientes('m')">
+<body onload="verPacientes('m'); mostrarDoctor()">
     <div class="columns" > <!--AQUI VA LO DE LOS DATOS DE PERFIL  -->
         <div class="box">
             <div class="is full" id="div_perfil">
@@ -37,11 +38,11 @@
                     </div>
                     <div class="column is half">
                         <div> 
-                            <p id="txtNombre">Especialidad : aaaaaaaaaaaaaaaa</p>
+                            <p id="txtEspecialidad">Especialidad : aaaaaaaaaaaaaaaa</p>
                         </div>
                         <br>
                         <div>
-                            <p id="txtApellido">Tipo de Sangre : bbj</p>
+                            <p id="txtSangre">Tipo de Sangre : bbj</p>
                         </div>
                     </div>
                 </div>

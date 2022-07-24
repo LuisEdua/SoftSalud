@@ -1,12 +1,12 @@
-var conexion = require('../conexion.js');
+var conexion = require('../JS/conexion.js');
 
 function editDoc(){
-    var id = document.getElementById("input_IDusuario").value;
-    input_IDusuario.value = "";
-    var area_encargada = document.getElementById("input_AreaEncargada").value;
-    input_AreaEncargada.value = "";
-    var especialidad = document.getElementById("input_Especialidad").value;
-    input_Especialidad.value = "";
+    var id = document.getElementById("input_ID").value;
+    input_ID.value = "";
+    var area_encargada = document.getElementById("area").value;
+    area.value = "";
+    var especialidad = document.getElementById("especialidad").value;
+    especialidad.value = "";
     
     
     //INSTRUCCIONES DE sql
