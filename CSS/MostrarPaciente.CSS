@@ -1,3 +1,11 @@
+body{
+    background-image: url("../Imagenes/RegistroPacientes.PNG");
+    background-size: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+}
 .box{
     border: 1px solid rgb(0, 0, 0);
     height: 625px;
